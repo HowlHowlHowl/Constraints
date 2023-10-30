@@ -1,7 +1,7 @@
 %Naive model
 
-%include "19x19.dzn";
-include "20x20.dzn";
+include "19x19.dzn";
+%include "20x20.dzn";
  
 par int: n; %number of posters
 par int: w; %width of paper

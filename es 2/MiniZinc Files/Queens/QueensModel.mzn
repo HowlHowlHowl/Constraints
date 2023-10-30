@@ -1,5 +1,3 @@
-% Alldifferent model
-
 include "alldifferent.mzn";
 
 int: n; % Number of queens
@@ -11,4 +9,5 @@ constraint alldifferent(q)::domain;
 constraint alldifferent([ q[i] + i | i in 1..n ])::domain;
 constraint alldifferent([ q[i] - i | i in 1..n ])::domain;
 % Search for all solutions, using N = 8, 9, 10, and 12.
-solve satisfy;
+
+solve :: int_search(q, input_order, indomain_min) satisfy;

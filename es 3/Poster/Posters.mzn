@@ -25,22 +25,16 @@ constraint forall (i in 1..n)(
   (all_vars[2*i-1] = x[i])/\(all_vars[2*i] = y[i])
 );
 
-%input order – min value 
-%solve :: int_search(all_vars, input_order, indomain_min) satisfy;
+solve :: int_search(all_vars, input_order, indomain_min) satisfy;
 
-%input order – random value
 %solve :: int_search(all_vars, input_order, indomain_random) satisfy;
 
-%smallest domain – min value
-solve :: int_search(all_vars, first_fail, indomain_min) satisfy;
+%solve :: int_search(all_vars, first_fail, indomain_min) satisfy;
 
-%smallest domain – random value
 %solve :: int_search(all_vars, first_fail, indomain_random) satisfy;
 
-%domWdeg – min value
 %solve :: int_search(all_vars, dom_w_deg, indomain_min) satisfy;
 
-%domWdeg – random value
 %solve :: int_search(all_vars, dom_w_deg, indomain_random) satisfy;
 
 

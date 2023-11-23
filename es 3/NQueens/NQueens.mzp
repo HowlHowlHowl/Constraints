@@ -1,0 +1,20 @@
+{
+    "openFiles": [
+        "30x30.dzn",
+        "35x35.dzn",
+        "45x45.dzn",
+        "50x50.dzn",
+        "NQueens.mzn"
+    ],
+    "openTab": 4,
+    "projectFiles": [
+        "30x30.dzn",
+        "35x35.dzn",
+        "45x45.dzn",
+        "50x50.dzn",
+        "NQueens.mzn"
+    ],
+    "selectedBuiltinConfigId": "org.gecode.gecode",
+    "selectedBuiltinConfigVersion": "6.3.0",
+    "version": 106
+}

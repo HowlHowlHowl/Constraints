@@ -12,9 +12,9 @@ constraint alldifferent([ q[i] + i | i in 1..n ])::domain;
 constraint alldifferent([ q[i] - i | i in 1..n ])::domain;
 % Search for all solutions, using N = 8, 9, 10, and 12.
 
-solve::int_search(q, input_order, indomain_min) satisfy;
+%solve::int_search(q, input_order, indomain_min) satisfy;
 %solve::int_search(q, input_order, indomain_random) satisfy;
 %solve::int_search(q, first_fail, indomain_min) satisfy;
 %solve::int_search(q, first_fail, indomain_random) satisfy;
 %solve::int_search(q, dom_w_deg, indomain_min) satisfy;
-%solve::int_search(q, dom_w_deg, indomain_random) satisfy;
+solve::int_search(q, dom_w_deg, indomain_random) satisfy;
